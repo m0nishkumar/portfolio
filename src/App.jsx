@@ -21,7 +21,7 @@ function App() {
   const location = useLocation();
 
   // State to manage loader visibility
-  const [showLoader, setShowLoader] = useState(true);
+  const [showLoader, setShowLoader] = useState(false);
 
   const [originalTitle, setOriginalTitle] = useState();
 
