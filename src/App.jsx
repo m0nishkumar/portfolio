@@ -11,7 +11,7 @@ import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   const personalDetails = {
-    name: "Monish Kumar B",
+    name: "Monish Kumar",
     location: "India",
     email: "monishkumar4050@gmail.com",
     brand:
