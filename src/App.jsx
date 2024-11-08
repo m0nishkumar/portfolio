@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, Route, useLocation, Navigate } from "react-router-dom";
-
-// Components
+import { Routes, Route, useLocation, Navigate } from "react-router-dom"; 
 import Loader from "./pages/loader/loader";
 import Header from "./components/Header";
 import Landing from "./pages/landing/Landing";
@@ -11,37 +9,13 @@ import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
 
-/**
- * Instructions for Customizing the Portfolio
- * ------------------------------------------
- * 1. Adding Your Own Projects:
- *    - Navigate to the "_data" folder and modify the "projects.json" file to include your projects.
- *
- * 2. Replacing Project Images:
- *    - Access the "public/projectImages" directory to replace the my project images with your own.
- *
- * 3. Handling Form Submissions:
- *    - To receive form submissions, obtain an API Key. Refer to the Form component for detailed instructions.
- *
- * For Assistance or Questions:
- * -----------------------------
- * If you require assistance or have questions, don't hesitate to reach out via LinkedIn or email.
- *
- * Support and Star:
- * ------------------
- * Enjoying this project? Please consider giving it a star (🌟).
- * I'm committed to ongoing updates and feature additions.
- * Your suggestions and feedback are invaluable and highly encouraged!
- */
-
 function App() {
-  // Personal details for the user
   const personalDetails = {
-    name: "Monish kumar B",
+    name: "Monish Kumar B",
     location: "India",
     email: "monishkumar4050@gmail.com",
     brand:
-      "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centred digital products.",
+      "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centered digital products.",
   };
 
   const location = useLocation();
