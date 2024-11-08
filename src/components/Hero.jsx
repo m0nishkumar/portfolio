@@ -74,7 +74,7 @@ const Hero = ({ name }) => {
   },[])
   return (
     <>
-        <div className="flex-1 flex flex-row justify-center items-center relative mb-[80px]">
+        <div className="flex-1 flex flex-row justify-center items-center relative mb-[110px]">
         <div className="textContainer absolute z-30" style={styles.textContainer}>
 
         <motion.h1
