@@ -1,25 +1,20 @@
 import { useRef, useEffect } from "react";
 
 /**
- * Represents a drawing canvas that creates trails as the user moves the mouse.
- *
- * @component
+ * Represents a drawing canvas that creates trails as the user moves the mouse,
+ * which disappear 5 seconds after the last movement.
  */
 
 const Draw = () => {
-  // Create a reference to the canvas element
   const canvasRef = useRef(null);
-  // Store the last position of the mouse
   const lastPositionRef = useRef(null);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
-    // Get the canvas and its context
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    // Add a mousemove event listener to the canvas
-    canvas.addEventListener("mousemove", (e) => {
-      // Set the drawing settings
+    const startDrawing = (e) => {
       ctx.lineWidth = 0.2;
       ctx.lineCap = "round";
       ctx.strokeStyle = "#fff";
@@ -27,18 +22,35 @@ const Draw = () => {
 
       const { pageX, pageY } = e;
 
+      // Start a new path for each movement to prevent old paths from persisting
+      ctx.beginPath();
       if (lastPositionRef.current) {
         const { x, y } = lastPositionRef.current;
-        // Move the pen to the last position and draw a line to the current position
         ctx.moveTo(x - canvas.offsetLeft, y - canvas.offsetTop);
         ctx.lineTo(pageX - canvas.offsetLeft, pageY - canvas.offsetTop);
         ctx.stroke();
       }
+      ctx.closePath();
 
       // Update the last position
       lastPositionRef.current = { x: pageX, y: pageY };
-    });
-  }, []); // Empty dependency array ensures this effect runs only once
+
+      // Reset the timer on each movement
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      timeoutRef.current = setTimeout(() => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }, 3000);
+    };
+
+    // Attach event listener
+    canvas.addEventListener("mousemove", startDrawing);
+
+    // Clean up on unmount
+    return () => {
+      canvas.removeEventListener("mousemove", startDrawing);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
 
   return (
     <canvas

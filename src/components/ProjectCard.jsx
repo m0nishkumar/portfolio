@@ -31,7 +31,7 @@ const ProjectCard = ({ title, image, color, id }) => {
         ref={ref}
         className=""
         variants={variants}
-        initial="hidden"
+        initial="visible"
         animate={inView ? "visible" : "hidden"}
         transition={{ duration: 0.4, ease: "easeInOut" }}
       >
@@ -42,9 +42,9 @@ const ProjectCard = ({ title, image, color, id }) => {
         >
           <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
             <h3 className="projectTitle">{title}</h3>
-            <span className="viewWork">
-              View Work <FiArrowUpRight />
-            </span>
+            <button className="viewWork  text-white border-white border-2 rounded-md p-2 px-3">
+              View Work 
+            </button>
           </div>
           <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
             <Image src={image} alt="Laptop displaying the application" />

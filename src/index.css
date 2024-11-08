@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* --- VARIABLES --- */
 :root {
@@ -310,4 +313,59 @@ footer .socialIcons {
   .toggleMode {
     display: inline-block;
   }
+}
+
+#logo path{
+  stroke-dasharray: 503.284423828125px;
+  stroke-dashoffset: 503.284423828125px;
+  animation: animate-logo 2s ease forwards 2s;
+}
+.cursive{
+  font-family: 'Cedarville Cursive', cursive;
+}
+/* #logo path:nth-child(2),#logo path:nth-child(4),#logo path:nth-child(6),#logo path:nth-child(8),#logo path:nth-child(10),#logo path:nth-child(12),#logo path:nth-child(14){
+  fill:black
+} */
+#logo > path:nth-child(3),#logo path:nth-child(4){
+  stroke-dasharray: 377.3016357421875px;
+  stroke-dashoffset: 377.3016357421875px;
+  animation: animate-logo 2s ease forwards 1.3s;
+}
+#logo > path:nth-child(5),#logo path:nth-child(6){
+  stroke-dasharray: 402.9886474609375px;
+  stroke-dashoffset: 402.9886474609375px;
+  animation: animate-logo 2s ease forwards 0.6s;
+}
+#logo > path:nth-child(7),#logo > path:nth-child(8){
+  stroke-dasharray: 151.29598999023438px;
+  stroke-dashoffset: 151.29598999023438px;
+  animation: animate-logo 2s ease forwards 0.9s;
+}
+#logo > path:nth-child(9),#logo > path:nth-child(10){
+  stroke-dasharray: 329.2757263183594px;
+  stroke-dashoffset:329.2757263183594px;
+  animation: animate-logo 2s ease forwards 1.2s;
+}
+#logo > path:nth-child(11),#logo > path:nth-child(12){
+  stroke-dasharray:356.3520202636719px;
+  stroke-dashoffset:356.3520202636719px;
+  animation: animate-logo 2s ease forwards 1.5s;
+}
+#logo > path:nth-child(13),#logo > path:nth-child(14){
+  stroke-dasharray: 37.184818267822266px;
+  stroke-dashoffset:37.184818267822266px;
+  animation: animate-logo 2s ease forwards 1.8s;
+}
+@keyframes animate-logo {
+  to{
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes filll {
+  to{
+    fill:white
+  }
+}
+@media (max-width: 480px) {
+  
 }

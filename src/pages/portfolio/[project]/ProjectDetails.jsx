@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useParams, Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import PageHeader from "../../../components/PageHeader";
@@ -6,7 +6,9 @@ import PageNotFound from "../../404/PageNotFound";
 import Button from "../../../components/Button";
 import Image from "../../../components/Image";
 import projects from "../../../_data/projects.json";
+import ReactPlayer from 'react-player';
 import Footer from "../../../components/Footer";
+import ImageSlideshow from "./SlideShow"
 
 /**
  * Represents the ProjectDetails page component.
@@ -18,7 +20,7 @@ import Footer from "../../../components/Footer";
 const ProjectDetails = () => {
   // Get the current location using React Router's useLocation hook
   const location = useLocation();
-
+  const playerRef = useRef(null);
   // Scroll to the top of the page when the location changes
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,18 +37,27 @@ const ProjectDetails = () => {
     return <PageNotFound />;
   }
 
+
   return (
     <>
       <main className="container portfolio">
         {/* Display the page header with project title and description */}
         <PageHeader title={project.title} description={project.description} />
         <div className="projectDetails">
-          <div className="row">
-            <div className="col-12 col-xl-4 projectImage">
+          <div className="projectContainer">
+            <div className=" projectImage">
               {/* Display the project image */}
-              <Image src={project.image2} alt={project.name} opacity="0.5" />
+              {/* <Image src={project.image2} alt={project.name} opacity="0.5" /> */}
+              <div className="MobileView1">
+              {project.image3!="" ? 
+              (
+    <ReactPlayer ref={playerRef} url={project.image3} controls={true} width="100%" height="100%" />
+  ) : (
+    <ImageSlideshow images={project.slideShow}/>
+  )}
+              </div>
             </div>
-            <div className="col-12 col-xl-8 projectBodyContainer">
+            <div className="w-full MobileView2">
               <div className="tech">
                 {/* Display project technologies with animation */}
                 {project.technologies.map((technology, i) => (
@@ -87,9 +98,9 @@ const ProjectDetails = () => {
                 <a href={project.github}>
                   <Button name="View Code" />
                 </a>
-                <a href={project.deployed}>
+                {/* <a href={project.deployed}>
                   <Button name="View Site" />
-                </a>
+                </a> */}
                 <Link to="/portfolio">
                   <Button name="Go Back" color="var(--hl2-color)" />
                 </Link>
