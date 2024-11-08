@@ -62,7 +62,7 @@ function App() {
           {/* Define routes */}
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/project" element={<Portfolio />} />
             <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
 
             <Route
