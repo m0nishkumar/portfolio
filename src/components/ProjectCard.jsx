@@ -47,7 +47,7 @@ const ProjectCard = ({ title, image, color, id }) => {
             </button>
           </div>
           <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
-            <Image src={image} alt="Laptop displaying the application" />
+            <Image src= {`${process.env.PUBLIC_URL}/${image}`} alt="Laptop displaying the application" />
           </div>
         </div>
       </motion.div>

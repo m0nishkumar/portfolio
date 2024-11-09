@@ -25,7 +25,7 @@ const ImageSlideshow = ({images}) => {
         <div className="slideshow-container" style={{ textAlign: 'center' }}>
             <button onClick={prevSlide}>❮</button>
             <img
-                src={"/projectImages/"+images[currentIndex]}
+                src={`${process.env.PUBLIC_URL}/projectImages/${images[currentIndex]}`}
                 alt={`Slide ${currentIndex}`}
                 style={{ width: '100%', height: '100%', borderRadius: '8px' }}
             />

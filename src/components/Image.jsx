@@ -14,7 +14,7 @@ import { useState } from "react";
 
 export default function Image({ src, height, width, size, alt, opacity }) {
   // State to manage image loading status
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   return (
     <div
       style={{
