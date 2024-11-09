@@ -8,7 +8,7 @@
     "slideShow":["link1.jpg","link2.jpg","link3.jpg","link4.jpg","link5.jpg","link6.jpg","link7.jpg"],
     "technologies": ["React", "Nodejs", "Tailwind", "MongoDB"],
     "body":"The Ultimate Productivity Hub is an AI-powered, all-in-one platform for managing personal and professional tasks efficiently. Built with the MERN stack, it combines task management, budget tracking, news, calendar planning, daily routines, and goal-setting into a single app. With one-click AI-generated routines, seamless Framer Motion animations, and real-time data syncing, it provides users with an engaging, organized, and efficient way to boost productivity and achieve their goals.",
-    "github": "https://github.com/mdyeates/weather-app",
+    "github": "https://github.com/m0nishkumar",
     "deployed": "https://mdyeates.github.io/weather-app/",
     "bgcolor": "var(--hl-color)",
     "id": "2"
@@ -22,7 +22,7 @@
     "slideShow":["link1.jpg","link2.jpg","link3.jpg","link4.jpg","link5.jpg","link6.jpg","link7.jpg"],
     "technologies": ["React", "Nodejs", "Tailwind", "MongoDB"],
     "body": "The 3D portfolio, built with React Three Fiber, delivers a highly interactive and visually captivating experience, highlighting expertise in 3D rendering, animation, and responsive web design. The portfolio effectively combines technical skill and creativity, adapting seamlessly across devices to engage users with dynamic visuals and smooth interactivity. This project demonstrates proficiency in modern web technologies and a commitment to user-focused design.",
-    "github": "https://github.com/mdyeates/team-dashboard",
+    "github": "https://github.com/m0nishkumar",
     "deployed": "https://drive.google.com/file/d/1_atUXTM-L9r4NccsrPaaWqPyNu37ftwH/view",
     "bgcolor": "#6c4bf4",
     "id": "3"
@@ -36,7 +36,7 @@
     "slideShow":["link1.jpg","link2.jpg","link3.jpg","link4.jpg","link5.jpg","link6.jpg","link7.jpg"],
     "technologies": ["React", "Nodejs", "Tailwind", "MongoDB"],
     "body": "The 3D custom designer project, originally inspired by a JavaScript Mastery tutorial, has been significantly enhanced to allow customization of T-shirts, pants, and shoes. This upgraded version enables users to personalize complete outfits with various styles and colors. A standout feature is the integration of Google Image Search, allowing users to directly apply images from search results to their selected items, adding unique visual options. This project highlights advanced skills in 3D design, user interaction, and API integration, providing a comprehensive and engaging customization experience that goes beyond the original project’s scope.",
-    "github": "https://github.com/mdyeates/coding-quiz",
+    "github": "https://github.com/m0nishkumar",
     "deployed": "https://mdyeates.github.io/coding-quiz/",
     "bgcolor": "#f85781",
     "id": "4"
@@ -50,7 +50,7 @@
     "slideShow":["link1.jpg","link2.jpg","link3.jpg","link4.jpg","link5.jpg","link6.jpg","link7.jpg"],
     "body": "Bit LinkedIn is a networking platform designed to mirror LinkedIn's functionality within an organization. It provides employees with tools for posting updates, sharing achievements, and building professional connections. Key features include job searching to explore job opportunities, an interactive social media space to foster engagement and community, and a resume builder tailored to highlight skills and accomplishments, making it easy for employees to showcase their profiles and grow within the organization.",
     "technologies": ["React", "Framer Motion", "Bootstrap", "HTML", "CSS"],
-    "github": "https://github.com/Jake-W95/P1",
+    "github": "https://github.com/m0nishkumar",
     "deployed": "https://p1-heroes.netlify.app/",
     "bgcolor": "#e47911",
     "id": "5"
