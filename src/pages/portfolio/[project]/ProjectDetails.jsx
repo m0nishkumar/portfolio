@@ -101,7 +101,7 @@ const ProjectDetails = () => {
                 {/* <a href={project.deployed}>
                   <Button name="View Site" />
                 </a> */}
-                <Link to="/portfolio">
+                <Link to="/projects">
                   <Button name="Go Back" color="var(--hl2-color)" />
                 </Link>
               </motion.div>

@@ -21,7 +21,7 @@ const SocialIcons = () => {
 
   return (
     <div className="socialIcons" style={styles.socialIcons}>
-      <a className="icon" style={styles.icon} href="https://github.com/mdyeates">
+      <a className="icon" style={styles.icon} href="https://github.com/m0nishkumar">
         {/* GitHub Icon */}
         <motion.i
           initial={{ y: 100, opacity: 0 }}
@@ -32,7 +32,7 @@ const SocialIcons = () => {
           title="Michael Yeates' GitHub Profile"
         ></motion.i>
       </a>
-      <a className="icon" style={styles.icon} href="https://www.linkedin.com/in/mdyeates/">
+      <a className="icon" style={styles.icon} href="https://www.linkedin.com/in/monish-kumar-2031ba242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
         {/* LinkedIn Icon */}
         <motion.i
           initial={{ y1: 100, opacity: 0 }}
@@ -43,7 +43,7 @@ const SocialIcons = () => {
           title="Michael Yeates' LinkedIn Profile"
         ></motion.i>
       </a>
-      <a className="icon" style={styles.icon} href="https://www.instagram.com/michael.yeates/">
+      <a className="icon" style={styles.icon} href="https://www.instagram.com/m0nishkumar">
         {/* Instagram Icon */}
         <motion.i
           initial={{ y: 100, opacity: 0 }}
@@ -54,7 +54,7 @@ const SocialIcons = () => {
           title="Michael Yeates' Instagram Profile"
         ></motion.i>
       </a>
-      <a className="icon" style={styles.icon} href="https://twitter.com/mdyeates">
+      <a className="icon" style={styles.icon} href="https://twitter.com/">
         {/* Twitter Icon */}
         <motion.i
           initial={{ y: 100, opacity: 0 }}

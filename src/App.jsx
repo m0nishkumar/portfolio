@@ -76,7 +76,7 @@ function App() {
               }
             />
             <Route path="/page-not-found" element={<PageNotFound />} />
-            <Route path="/portfolio/:projectTitle" element={<ProjectDetails />} />
+            <Route path="/project/:projectTitle" element={<ProjectDetails />} />
             {/* Fallback route for unknown paths */}
             <Route path="*" element={<Navigate to="/page-not-found" />} />
           </Routes>

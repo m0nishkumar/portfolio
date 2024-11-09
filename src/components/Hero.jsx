@@ -110,13 +110,13 @@ const Hero = ({ name }) => {
           <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} src={`${process.env.PUBLIC_URL}/projectImages/nodejs.png`} className='w-12 h-12 absolute planet z-40 rounded-full p-2 bg-slate-100'/>
           <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} src={`${process.env.PUBLIC_URL}/projectImages/tailwind.png`}  className='w-12 h-12 absolute planet z-40 rounded-full p-2 bg-slate-100'/>
           <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} src={`${process.env.PUBLIC_URL}/projectImages/git.png`} className='w-12 h-12 absolute planet z-40 rounded-full p-2 bg-slate-100'/>
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full bg-slate-200'>😂</motion.p>
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full bg-slate-200'>😇</motion.p>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full  bg-slate-200'>😍</motion.p>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full  bg-slate-200'>❤️</motion.p>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full  bg-slate-200'>🤔</motion.p>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full bg-slate-200'>😯</motion.p>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full  bg-slate-200'>😎</motion.p>
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full bg-slate-200'>😱</motion.p>
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1,delay: 1, ease: "easeInOut" }} className=' absolute planet1 z-50 rounded-full bg-slate-200'>🤗</motion.p>
 
           <motion.div  className='p-orbit rounded-full bg-white z-30 absolute border-gray-400'style={{
              backgroundColor: "#131a22"
