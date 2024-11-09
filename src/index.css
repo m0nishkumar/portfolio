@@ -138,12 +138,11 @@ a {
 
 /* --- HEADER ---  */
 header {
-  padding: var(--sm-spacing) var(--spacing);
+  padding: 20px;
   color: var(--text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10px;
 }
 
 .logo {

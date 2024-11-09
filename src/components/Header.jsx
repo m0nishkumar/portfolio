@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <header className="header">
       {/* Link to the home page */}
-      <NavLink to="/">
+      <NavLink to="/" className="">
         {/* Animated logo */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}

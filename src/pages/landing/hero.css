@@ -16,15 +16,15 @@
 .landing .socialIcons {
   display: flex;
   position: absolute;
-  left: 50px;
+  left: 20px;
   bottom: 20px;
 }
 @media (min-width: 481px) {
 .resumeButton{
   display: flex;
   position: absolute;
-  right: 60px;
-  bottom: 50px;
+  right: 20px;
+  bottom: 40px;
   transition: 0.3s;
 }
 }
@@ -40,7 +40,7 @@
   .resumeButton{
     display: flex;
     position: absolute;
-    right: 40px;
+    right: 20px;
     bottom: 30px;
     transition: 0.3s;
   }

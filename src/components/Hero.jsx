@@ -132,20 +132,6 @@ const Hero = ({ name }) => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6, type: "spring" }} ></motion.div>
         </div>  
-
-      {/* Animated landing image */}
-      {/* <div className="image-container">
-        <motion.img
-          className="landingImage"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.25 }}
-          transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
-          style={styles.landingImage}
-          src={landingImage}
-          alt="Michael Yeates"
-        />
-      </div> */}
-      {/* Displaying social icons */}
       <motion.div >
         <SocialIcons />
       </motion.div>
