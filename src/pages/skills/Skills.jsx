@@ -108,7 +108,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="PageContainer">
+    <div className="PageContainer w-[100vw]">
 
         <div>
           <div className="grid-container">

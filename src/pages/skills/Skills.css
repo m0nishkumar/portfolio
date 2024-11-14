@@ -13,7 +13,7 @@
     'menu menu main main right right'
     'menu menu footer footer footer footer';
   grid-template-rows: 70px 500px 70px;
-  grid-template-columns: 300px 200px 200px 200px auto auto;
+  grid-template-columns: 200px auto 200px 200px 200px auto;
   gap: 10px;
   background-color: #131a22;
 }
