@@ -97,20 +97,20 @@ ul {
       'main'
       'right'
       'footer';
-    grid-template-rows: 70px 500px 500px 500px 70px;
+    grid-template-rows: 70px 600px 800px 500px 70px;
     grid-template-columns:85vw;
   }
   .mobileCircle{
-    gap:20px;
+    gap:10px;
   }
 
   .circularImg{
-    height: 50px;
-    width:50px
+    height: 40px;
+    width:40px
   }
   .circularMobile{
-    height: 100px;
-    width:100px;
+    height: 90px;
+    width:90px;
   }
 
   .grid-container > div {
