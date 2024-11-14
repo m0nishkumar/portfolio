@@ -8,6 +8,7 @@ import ProjectDetails from "./pages/portfolio/[project]/ProjectDetails";
 import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
+import Skills from "./pages/skills/Skills";
 
 function App() {
   const personalDetails = {
@@ -64,7 +65,7 @@ function App() {
             <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
             <Route path="/project" element={<Portfolio />} />
             <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
-
+            <Route path="/skills" element={<Skills/>}/>
             <Route
               path="/contact"
               element={

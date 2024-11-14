@@ -53,6 +53,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.PageContainer{
+  padding: 12px var(--sm-spacing);
+}
+.bgcolor{
+  background-color: #131a22;
+}
 
 html,
 body,

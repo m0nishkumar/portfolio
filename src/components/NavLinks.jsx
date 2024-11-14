@@ -30,7 +30,7 @@ const NavLinks = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 2.4, duration: 0.5, type: "spring" }}
+          transition={{ delay: 2.5, duration: 0.5, type: "spring" }}
         >
           {/* Home link */}
           <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
@@ -41,7 +41,18 @@ const NavLinks = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 2.3, duration: 0.5, type: "spring" }}
+          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
+        >
+          {/* Contact link */}
+          <NavLink to="/skills" onClick={() => setIsMenuOpen(false)}>
+            Skills
+          </NavLink>
+        </motion.div>
+
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 2.4, duration: 0.5, type: "spring" }}
         >
           {/* Portfolio link */}
           <NavLink to="/project" onClick={() => setIsMenuOpen(false)}>
@@ -52,13 +63,14 @@ const NavLinks = () => {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
+          transition={{ delay: 2.3, duration: 0.5, type: "spring" }}
         >
           {/* Contact link */}
           <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
             Contact
           </NavLink>
         </motion.div>
+
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

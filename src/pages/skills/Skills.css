@@ -1,0 +1,120 @@
+/* Grid area assignments */
+.item1 { grid-area: header;padding: 10px 0px;background-color: rgba(255, 255, 255, 0.8); }
+.item2 { grid-area: menu; background-color: white; }
+.item3 { grid-area: main;background-color: white; }
+.item4 { grid-area: right;background-color: white; }
+.item5 { grid-area: footer;padding: 10px 0px;background-color: rgba(255, 255, 255, 0.8); }
+
+/* Desktop and Tablet Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header right right'
+    'menu menu main main right right'
+    'menu menu footer footer footer footer';
+  grid-template-rows: 70px 500px 70px;
+  grid-template-columns: 300px 200px 200px 200px auto auto;
+  gap: 10px;
+  background-color: #131a22;
+}
+
+/* Grid item styling */
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Remove default list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item1 { 
+    grid-area: header; 
+    overflow: hidden; /* Ensures the content stays within the header bounds */
+}
+
+/* Marquee container */
+.marquee {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+/* The content to scroll (this will contain two copies of the images) */
+.marquee-content {
+    position:absolute;
+    display: flex;
+    gap: 20px; /* Space between images */
+}
+
+.marquee-content img,.marquee-content1 img {
+    width: 50px; /* Set the width of each image */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+.circularImg{
+    height:70px;
+    width:70px
+  }
+  .circularMobile{
+    height: 130px;
+    width:130px;
+  }
+  .mobileCircle{
+    column-gap:40px;
+    row-gap: 20px;
+  }
+
+/* Keyframes for scrolling */
+/* @keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+/* @keyframes marquee1 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      'header'
+      'menu'
+      'main'
+      'right'
+      'footer';
+    grid-template-rows: 70px 500px 500px 500px 70px;
+    grid-template-columns:85vw;
+  }
+  .mobileCircle{
+    gap:20px;
+  }
+
+  .circularImg{
+    height: 50px;
+    width:50px
+  }
+  .circularMobile{
+    height: 100px;
+    width:100px;
+  }
+
+  .grid-container > div {
+    /* padding: 15px 0; */
+  }
+}
+

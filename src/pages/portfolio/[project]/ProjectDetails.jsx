@@ -72,7 +72,6 @@ const ProjectDetails = () => {
                   </motion.span>
                 ))}
               </div>
-
               <div className="projectBody">
                 {/* Display project body paragraphs with animation */}
                 {project.body.split("\n").map((paragraph, i) => (
