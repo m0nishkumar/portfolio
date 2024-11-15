@@ -1,9 +1,9 @@
 /* Grid area assignments */
-.item1 { grid-area: header;padding: 10px 0px;background-color: rgba(255, 255, 255, 0.8); }
+.item1 { grid-area: header;padding: 10px 0px; border-top: 2px solid white;border-bottom:2px solid white ;}
 .item2 { grid-area: menu; background-color: white; }
 .item3 { grid-area: main;background-color: white; }
 .item4 { grid-area: right;background-color: white; }
-.item5 { grid-area: footer;padding: 10px 0px;background-color: rgba(255, 255, 255, 0.8); }
+.item5 { grid-area: footer;padding: 10px 0px;border-bottom: 2px solid white;border-top:2px solid white ; }
 
 /* Desktop and Tablet Layout */
 .grid-container {
@@ -12,7 +12,7 @@
     'header header header header right right'
     'menu menu main main right right'
     'menu menu footer footer footer footer';
-  grid-template-rows: 70px 500px 70px;
+  grid-template-rows: 70px 60vh 70px;
   grid-template-columns: 200px auto 200px 200px 200px auto;
   gap: 10px;
   background-color: #131a22;
@@ -51,8 +51,8 @@ ul {
 }
 
 .marquee-content img,.marquee-content1 img {
-    width: 50px; /* Set the width of each image */
-    height: 50px; /* Maintain aspect ratio */
+    width: 45px; /* Set the width of each image */
+    height: 45px; /* Maintain aspect ratio */
 }
 
 .circularImg{

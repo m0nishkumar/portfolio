@@ -115,18 +115,18 @@ const Skills = () => {
             <div className="item1">
               <div className="marquee">
                 <div className="marquee-content z-10">
-                  <Marqueee images={images} />
+                  <Marqueee images={images} direction="left" />
                 </div>
               </div>
             </div>
             <div className="item2 overflow-scroll p-2" style={{}}>
                 <p className="text-2xl mb-3 font-semibold">Full Stack Skills</p>
-                <div className="w-fit">
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+                <div className="w-full">
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: "20px"}}>
                     {Object.keys(fullstack).map((category) => (
-  <div key={category} className="w-fit">
-    <h1 className="w-fit">{category.charAt(0).toUpperCase() + category.slice(1)} Technologies:</h1>
-    <div style={{ display: "flex", flexWrap: "wrap" }} className="mobileCircle">
+  <div key={category} className=" w-full">
+    <h1 className="text-left my-3">{category.charAt(0).toUpperCase() + category.slice(1)} Technologies:</h1>
+    <div style={{ display: "flex", flexWrap: "wrap",justifyContent:"space-around" }} className="mobileCircle">
       {fullstack[category].map(([name, progress, color, imagePath], index) => (
         <div key={index} className="shadow-md rounded-full circularMobile" style={{ position: "relative" }}>
           <CircularProgressbar
@@ -278,7 +278,7 @@ const Skills = () => {
             <div className="item5">
               <div className="marquee">
                 <div className="marquee-content ">
-                  <Marqueee images={images} />
+                  <Marqueee images={images} direction="right"/>
                 </div>
               </div>
             </div>

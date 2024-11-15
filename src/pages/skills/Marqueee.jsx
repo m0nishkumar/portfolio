@@ -1,11 +1,11 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-const Marqueee = ({images}) => 
+const Marqueee = ({images,direction}) => 
 {
-  console.log(images)
+  console.log(direction)
   return(
-  <Marquee>
+  <Marquee direction={direction}>
     {images.map((image, index) => (
         <img
           key={index}
