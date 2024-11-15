@@ -1,8 +1,8 @@
 /* Grid area assignments */
 .item1 { grid-area: header;padding: 10px 0px; border-top: 2px solid white;border-bottom:2px solid white ;}
-.item2 { grid-area: menu; background-color: white; }
-.item3 { grid-area: main;background-color: white; }
-.item4 { grid-area: right;background-color: white; }
+.item2 { grid-area: menu; background-color: white;border-radius: 16px;}
+.item3 { grid-area: main;background-color: white; border-radius: 16px;}
+.item4 { grid-area: right;background-color: white; border-radius: 16px;}
 .item5 { grid-area: footer;padding: 10px 0px;border-bottom: 2px solid white;border-top:2px solid white ; }
 
 /* Desktop and Tablet Layout */
@@ -13,9 +13,18 @@
     'menu menu main main right right'
     'menu menu footer footer footer footer';
   grid-template-rows: 70px 60vh 70px;
-  grid-template-columns: 200px auto 200px 200px 200px auto;
+  grid-template-columns: 250px auto 200px auto 250px auto;
   gap: 10px;
   background-color: #131a22;
+}
+.glass{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.78);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.7px);
+-webkit-backdrop-filter: blur(4.7px);
+border: 1px solid rgba(255, 255, 255, 0.69);
 }
 
 /* Grid item styling */
