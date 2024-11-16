@@ -21,20 +21,20 @@ const Skills = () => {
   const fullstack = {
     frontend: [
       ["React", 60, "#87CEEB", `${process.env.PUBLIC_URL}/projectImages/react.png`],
-      ["HTML", 60, "#ff8c00", `${process.env.PUBLIC_URL}/projectImages/html.png`],
-      ["CSS", 60, "blue", `${process.env.PUBLIC_URL}/projectImages/css.png`],
+      ["HTML", 90, "#ff8c00", `${process.env.PUBLIC_URL}/projectImages/html.png`],
+      ["CSS", 80, "blue", `${process.env.PUBLIC_URL}/projectImages/css.png`],
       ["JavaScript", 50, "#FDDA0D", `${process.env.PUBLIC_URL}/projectImages/javascript.png`],
-      ["Vue", 60, "green", `${process.env.PUBLIC_URL}/projectImages/vue.png`],
-      ["Tailwind", 60, "#87CEEB", `${process.env.PUBLIC_URL}/projectImages/tailwind.png`],
+      ["Vue", 50, "green", `${process.env.PUBLIC_URL}/projectImages/vue.png`],
+      ["Tailwind", 80, "#87CEEB", `${process.env.PUBLIC_URL}/projectImages/tailwind.png`],
     ],
     backend: [
-      ["Nodejs", 60, "green", `${process.env.PUBLIC_URL}/projectImages/nodejs.png`],
+      ["Nodejs", 50, "green", `${process.env.PUBLIC_URL}/projectImages/nodejs.png`],
       ["Flask", 60, "black", `${process.env.PUBLIC_URL}/projectImages/flask.png`],
-      ["Flask", 60, "#D22B2B", `${process.env.PUBLIC_URL}/projectImages/java.png`],
+      ["Flask", 80, "#D22B2B", `${process.env.PUBLIC_URL}/projectImages/java.png`],
     ],
     database: [
       ["MongoDB", 60, "green", `${process.env.PUBLIC_URL}/projectImages/mongodb.png`],
-      ["MySQL", 60, "#448EE2", `${process.env.PUBLIC_URL}/projectImages/mysql.png`],
+      ["MySQL", 80, "#448EE2", `${process.env.PUBLIC_URL}/projectImages/mysql.png`],
     ],
   };
   
